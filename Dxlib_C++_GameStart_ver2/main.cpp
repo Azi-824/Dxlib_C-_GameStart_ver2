@@ -23,6 +23,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	SetDrawScreen(DX_SCREEN_BACK);								//Draw系関数は裏画面に描画
 
+	//ゲームデータの読み込み開始
+	if (gamemaneger->Load() == false) { return -1; }			//ゲームデータ読み込み失敗
+
 	//ゲームのメインループ
 	while (gamemaneger->GameMainLoop())
 	{

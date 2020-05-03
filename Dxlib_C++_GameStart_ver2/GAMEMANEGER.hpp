@@ -51,11 +51,11 @@ public:
 	bool Load();				//ゲームに使用するデータの読み込み処理
 	bool GameMainLoop();		//ゲームのメインループ
 
-	bool ProcesScene();			//各シーンの処理
+	void ProcesScene();			//各シーンの処理
 
 
 	//****************** シーン関係 *************************
-	bool Scene_Load();			//ロード画面の処理
+	void Scene_Load();			//ロード画面の処理
 	void Draw_Scene_Load();		//ロード画面の描画処理
 
 	void Scene_Title();			//タイトル画面の処理
